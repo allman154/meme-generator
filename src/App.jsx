@@ -27,16 +27,18 @@ function App() {
                 <div className="input-col">
                   <label htmlFor="top-text-input">Top Text</label>
                   <input id="top-text-input"
-                         placeholder="One does not simply"
-                         onChange={handleChange}
-                         value={meme.topText} />
+                    name="topText"
+                    placeholder="One does not simply"
+                    onChange={handleChange}
+                    value={meme.topText} />
                 </div>
                 <div className="input-col">
                   <label htmlFor="bottom-text-input">Bottom Text</label>
                   <input id="bottom-text-input"
-                         placeholder="walk into Mordor." 
-                         onChange={handleChange}
-                         value={meme.bottonText}/>
+                    name="bottomText"
+                    placeholder="walk into Mordor."
+                    onChange={handleChange}
+                    value={meme.bottomText} />
                 </div>
               </div>
             </section>
