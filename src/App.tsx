@@ -9,7 +9,7 @@ function App() {
     bottomText: "Walk into Mordor",
   })
 
-  function handleChange(event) {
+  function handleChange(event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
     const { value, name } = event.currentTarget
     setMeme(prevMeme => ({
       ...prevMeme,

@@ -4,7 +4,10 @@ import './index.css'
 import App from './App.jsx'
 import Header from './Header.jsx'
 
-createRoot(document.getElementById('root')).render(
+const rootEl = document.getElementById('root');
+if (!rootEl) throw new Error("No Root found");
+
+createRoot(rootEl).render(
   <StrictMode>
     <Header />
     <App />
